@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overzichtspagina verhalenwebsite</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<!--meta viewport geeft aan dat de breedte van de content zich aan moet passen aan de breedte van het aparaat-->
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/wow%20logo.png" alt="WOWlogo">
+                    </a>
+                </li>
+
+                <li>
+                    <h1>99 Reis verhalen</h1>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 76.6 65.2" style="enable-background:new 0 0 76.6 65.2;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:#99258D;stroke-miterlimit:10;}
+                                .st1{fill:#99258D;}
+                            </style>
+                                <path class="st0" d="M57.3,49.1H24.5c-3.3,0-5.9-2.7-5.9-5.9V22c0-3.3,2.7-5.9,5.9-5.9h32.8c3.3,0,5.9,2.7,5.9,5.9v21.2
+                                                     C63.2,46.5,60.6,49.1,57.3,49.1z"/>
+                                    <circle class="st1" cx="40.9" cy="27.6" r="5.5"/>
+                                <path class="st1" d="M31.8,43.2h18.2c-0.1-5.5-2.5-8.6-9.2-8.7C34.3,34.4,31.6,37.7,31.8,43.2z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <details>
+        <summary>SCHILDERIJEN</summary>
+        <button>FILTER</button>
+        <button>ALLE</button>
+
+        <form>
+
+            <select name="categorie">
+            <option value="gevoel">Gevoel</option>
+            <option value="beperkingen">Beperkingen</option>
+            <option value="bijzondere verhalen">Bijzondere verhalen</option>
+            <option value="momentopname">Momentopname</option>
+            <option value="personen">Personen</option>
+            <option value="schrijfstijl">Schrijfstijl</option>
+            <option value="sport">Sport</option>
+            <option value="voor kinderen">Voor kinderen</option>
+       </select>
+
+            <label>Stijl:</label>
+            <br>
+            <input type="radio" name="stijl" value="minimaal"> <label for="Minimaal">Minimaal</label>
+            <input type="radio" name="stijl" value="normaal">
+            <label for="Normaal">Normaal</label>
+            <input type="radio" name="stijl" value="druk" />
+            <label for="Druk">Druk</label>
+            <br>
+            <label>Aantal woorden:</label>
+            <br>
+            <input type="radio" name="woorden" value="0-100" /> 0-100
+            <input type="radio" name="woorden" value="100-500" /> 100-500
+            <input type="radio" name="woorden" value="500+" /> 500+
+            <br>
+
+
+            <input type="submit" name="zoeken" value="ZOEKEN" />
+        </form>
+
+
+    </details>
+
+    <details>
+        <summary>VERRASSINGEN</summary>
+        Nog steeds aan het zoeken? Wij helpen jou graag! Druk op de 'VERRAS ME' knop en laat je door ons verrassen.
+
+        <a href="">
+              <button>verras me</button>
+            </a>
+
+    </details>
+
+    <section id="populaireverhalen">
+        <h2>Populaire verhalen</h2>
+        <article>
+            <header>
+                <img src="images/zombie.jpg" alt="afbeelding zombie">
+                <a href="">
+                        <button>lees meer</button>
+                    </a>
+            </header>
+            <h3>89. Zombie </h3>
+
+            <footer>
+                <p>Rating: 4.0</p>
+                <ul>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                </ul>
+                <button class="favoriet">Favoriet</button>
+                <button class="download">Download</button>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <img src="images/paranoia.jpg" alt="afbeelding paranoia">
+                <a href="">
+                        <button>lees meer</button>
+                    </a>
+            </header>
+
+
+            <h3>57. Paranoia</h3>
+            <footer>
+                <p>Rating: 4.6</p>
+                <ul>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                    <li>
+                        <img src="images/vollester.svg" alt="sterretje">
+                    </li>
+                </ul>
+                <button class="favoriet">Favoriet</button>
+                <button class="download">Download</button>
+            </footer>
+        </article>
+    </section>
+
+    <section id="Categorieën">
+        <h2>Categorieën</h2>
+
+        <a href="">
+            <article>
+                <img src="images/personen.svg" alt="afbeelding personen">
+                <hr>
+                <h4>Personen</h4>
+            </article>
+        </a>
+
+        <a href="">
+            <article>
+                <img src="images/voor%20kinderen.svg" alt="afbeelding kinderen">
+                <hr>
+                <h4>Voor kinderen</h4>
+            </article>
+        </a>
+
+        <a href="">
+            <article>
+                <img src="images/schrijfstijl.svg" alt="afbeelding schrijfstijl">
+                <hr>
+                <h4>Schrijfstijl</h4>
+            </article>
+        </a>
+
+        <a href="">
+            <article id="meer">
+                <h5>Meer Categorieën</h5>
+            </article>
+        </a>
+    </section>
+
+    <section id="Lengteverhaal">
+        <h2>Lengte verhaal</h2>
+
+        <article>
+            <a href="">Korte Verhalen</a>
+            <h6>0-100 woorden</h6>
+        </article>
+
+        <article>
+            <a href="">Lange Verhalen</a>
+            <h6>500+ woorden</h6>
+        </article>
+
+    </section>
+
+    <section id="stijl">
+        <h2>Stijl</h2>
+        <article>
+            <img src="images/minimale.svg" alt="minimale vormgeving">
+            <a href="">Minimale Vormgeving</a>
+        </article>
+
+        <article>
+            <img src="images/normaal.svg" alt="normale vormgeving">
+            <a href="">Normale Vormgeving</a>
+        </article>
+
+        <article>
+            <img src="images/druk.svg" alt="drukke vormgeving">
+            <a href="">Drukke Vormgeving</a>
+        </article>
+
+    </section>
+
+    <footer id="footer">
+        <img src="images/wow%20footer.png" alt="wow air logo footer">
+        <a href="">Zie alle 99 verhalen</a>
+        <section id="social">
+            <ul>
+                <li>
+                    <a href="https://nl-nl.facebook.com/wowiceland/">
+                        <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/wow_air">
+                        <img src="images/twitter.png" alt="Twitter">
+                        </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/wowair/?hl=nl">
+                        <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                </li>
+
+                <li>
+                    <a href="https://nl.pinterest.com/wowair/">
+                        <img src="images/pinterest.png" alt="Pinterest">
+                        </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/user/WOWairTV">
+                        <img src="images/youtube.png" alt="Youtube">
+                        </a>
+                </li>
+
+
+            </ul>
+        </section>
+
+    </footer>
+
+
+
+    <!--plaatjes is inhoud dus html iets over een plaatje heen plaatsen=position filter over de rest heen=position(dus met lagen werken) -->
+
+
+    <script src="script/overzichtspagina.js"></script>
+
+</body>
+
+</html>
