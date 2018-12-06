@@ -22,11 +22,11 @@
                 </li>
 
                 <li>
-                    <h1>99 Reis verhalen</h1>
+                    99 Reis verhalen
                 </li>
 
                 <li>
-                    <a href="login.html">
+                    <a href="inloggen.html">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 76.6 65.2" style="enable-background:new 0 0 76.6 65.2;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#99258D;stroke-miterlimit:10;}
@@ -46,12 +46,13 @@
 
     <details>
         <summary>SCHILDERIJEN</summary>
+
         <button>FILTER</button>
         <button>ALLE</button>
 
-        <form>
 
-            <select name="categorie">
+
+        <select>
             <option value="gevoel">Gevoel</option>
             <option value="beperkingen">Beperkingen</option>
             <option value="bijzondere verhalen">Bijzondere verhalen</option>
@@ -62,19 +63,18 @@
             <option value="voor kinderen">Voor kinderen</option>
        </select>
 
+        <form action="wow_verhaal.html">
+
+
             <label>Stijl:</label>
-            <br>
-            <input type="radio" name="stijl" value="minimaal"> <label for="Minimaal">Minimaal</label>
-            <input type="radio" name="stijl" value="normaal">
-            <label for="Normaal">Normaal</label>
-            <input type="radio" name="stijl" value="druk" />
-            <label for="Druk">Druk</label>
-            <br>
+            <input type="radio" value="minimaal" name="minimaal" checked="checked" /> minimaal
+            <input type="radio" value="normaal" name="normaal" /> normaal
+            <input type="radio" value="druk" name="druk" /> druk
+
             <label>Aantal woorden:</label>
-            <br>
-            <input type="radio" name="woorden" value="0-100" /> 0-100
-            <input type="radio" name="woorden" value="100-500" /> 100-500
-            <input type="radio" name="woorden" value="500+" /> 500+
+            <input type="radio" value="0-100" name="aantalwoorden" /> 0-100
+            <input type="radio" value="100-500" name="aantalwoorden" checked="checked"/> 100-500
+            <input type="radio" value="500+" name="aantalwoorden"/> 500+
             <br>
 
 
@@ -88,9 +88,7 @@
         <summary>VERRASSINGEN</summary>
         Nog steeds aan het zoeken? Wij helpen jou graag! Druk op de 'VERRAS ME' knop en laat je door ons verrassen.
 
-        <a href="">
-              <button>verras me</button>
-            </a>
+        <a href=""> Verras me</a>
 
     </details>
 
@@ -99,9 +97,7 @@
         <article>
             <header>
                 <img src="images/zombie.jpg" alt="afbeelding zombie">
-                <a href="">
-                        <button>lees meer</button>
-                    </a>
+                <a href="">Lees meer </a>
             </header>
             <h3>89. Zombie </h3>
 
@@ -132,9 +128,7 @@
         <article>
             <header>
                 <img src="images/paranoia.jpg" alt="afbeelding paranoia">
-                <a href="">
-                        <button>lees meer</button>
-                    </a>
+                <a href="">Lees meer </a>
             </header>
 
 
@@ -158,6 +152,7 @@
                         <img src="images/vollester.svg" alt="sterretje">
                     </li>
                 </ul>
+
                 <button class="favoriet">Favoriet</button>
                 <button class="download">Download</button>
             </footer>
@@ -170,24 +165,21 @@
         <a href="">
             <article>
                 <img src="images/personen.svg" alt="afbeelding personen">
-                <hr>
-                <h4>Personen</h4>
+                <h3>Personen</h3>
             </article>
         </a>
 
         <a href="">
             <article>
                 <img src="images/voor%20kinderen.svg" alt="afbeelding kinderen">
-                <hr>
-                <h4>Voor kinderen</h4>
+                <h3>Voor kinderen</h3>
             </article>
         </a>
 
         <a href="">
             <article>
                 <img src="images/schrijfstijl.svg" alt="afbeelding schrijfstijl">
-                <hr>
-                <h4>Schrijfstijl</h4>
+                <h3>Schrijfstijl</h3>
             </article>
         </a>
 
@@ -216,23 +208,20 @@
     <section id="stijl">
         <h2>Stijl</h2>
         <article>
-            <img src="images/minimale.svg" alt="minimale vormgeving">
             <a href="">Minimale Vormgeving</a>
         </article>
 
         <article>
-            <img src="images/normaal.svg" alt="normale vormgeving">
             <a href="">Normale Vormgeving</a>
         </article>
 
         <article>
-            <img src="images/druk.svg" alt="drukke vormgeving">
             <a href="">Drukke Vormgeving</a>
         </article>
 
     </section>
 
-    <footer id="footer">
+    <footer>
         <img src="images/wow%20footer.png" alt="wow air logo footer">
         <a href="">Zie alle 99 verhalen</a>
         <section id="social">
@@ -240,7 +229,7 @@
                 <li>
                     <a href="https://nl-nl.facebook.com/wowiceland/">
                         <img src="images/facebook.png" alt="Facebook">
-                        </a>
+                    </a>
                 </li>
 
                 <li>
@@ -252,19 +241,19 @@
                 <li>
                     <a href="https://www.instagram.com/wowair/?hl=nl">
                         <img src="images/instagram.png" alt="Instagram">
-                        </a>
+                    </a>
                 </li>
 
                 <li>
                     <a href="https://nl.pinterest.com/wowair/">
                         <img src="images/pinterest.png" alt="Pinterest">
-                        </a>
+                    </a>
                 </li>
 
                 <li>
                     <a href="https://www.youtube.com/user/WOWairTV">
                         <img src="images/youtube.png" alt="Youtube">
-                        </a>
+                    </a>
                 </li>
 
 
