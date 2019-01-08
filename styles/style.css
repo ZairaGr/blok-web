@@ -1,24 +1,7 @@
 body {
     font-family: "Museo Sans", sans-serif;
     color:#2b4040;
-    background: pink;
-}
-
-/*major breakpoint 1 */
-@media (min-width:30em){
-
-}
-
-p{
-    text-align: right;
-    font-size:0.625em;
-    font-weight:500;
-    margin-right:2.5em;
-}
-
-h1{
-    font-size: 0.8em;
-    font-weight:700;
+    margin: 1;
 }
 
 h2{
@@ -26,6 +9,7 @@ h2{
     font-weight:700;
     color: #2b4040;
     text-align:left;
+    padding: 0.8em 0em 0.6em 0.5em;
 }
 
 h3{
@@ -33,78 +17,140 @@ h3{
     font-weight:100;
     color: #2b4040;
     display: block;
-    margin top: 16px;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 1em;
+    margin-top: 2em;
+    margin-left:1em;
+
 }
 
 h4{
-    text-align:center;
-    margin-top: 2em;
-    margin-bottom:2em;
-    font-size: 0.92em;
-    font-weight:700;
-    color:#99258d;
+    font-size: 0.8em;
+    color: #FFDF5D;;
+    text-transform: uppercase;
+    font-weight: 100;
 
 }
 
 h5{
-    color:#FFDF5D;
-    font-size: 1.25em;
-    font-weight: 400;
-    margin-bottom:0;
-    text-align:center;
-
-}
-
-h6{
-    color:#FFDF5D;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    font-weight:100;
-    text-align:center;
-}
-
-h7{
-    color:#88afaf;
-    text-transform: uppercase;
-    font-size:0.9em;
-    font-weight:700;
-}
-
-
-nav ul{
-    list-style:none;
-    padding:0;
+    font-size: 0.75em;
+    font-style: italic;
     display:flex;
+    justify-content:flex-end;
+    color:#020303;
+    font-weight: 300;
+    margin-top: -6.5em;
+    margin-right: 4.5em;
 }
 
-svg{
- width: 3em;
-}
 
- header li:first-child {
-    margin-right:auto;
-}
 
-header li{
-    margin:1em;
-}
+/*
+============================================
 
-header ul{
+NAVIGATION
+
+============================================*/
+header > nav {
     border-bottom: 1px solid #a6c4c4;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:5em;
+    background-color: white;
+    box-shadow:0 0 5px rgba(0,0,0,.5);
+    z-index: 1;
 }
+
+header > nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li:first-of-type {
+    margin-right: auto;
+}
+
+
+header a:nth-of-type(1) img {
+    width: 8em;
+    position: relative;
+    margin-bottom: 1em;
+    top:-0.75em;
+    margin:1em;
+    margin-left: -1.5em;
+}
+
+nav > ul > li:nth-of-type(2) > a > svg {
+    width: 10em;
+    margin-top: -1.75em;
+    margin-bottom: 1em;
+    border: 0;
+    margin-right:-6em;
+}
+
+nav > ul > li:nth-of-type(3) > a > svg {
+    width: 10em;
+    margin-top: -1.75em;
+    margin-bottom: 1em;
+    margin-right: -2.5em;
+
+}
+
+a:hover svg .st0 {
+    background-color: #982582;
+    fill: #991782;
+}
+
+a:hover svg .st1{
+    fill: white;
+}
+
+a:active svg .st0{
+    background-color: #982582;
+    fill: #991782;
+}
+
+a:active svg .st1{
+    fill: white;
+}
+
+section#homepage {
+    background-color: white;
+    background: url(../images/wow-air.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18em;
+    width:100%;
+    min-width: 23em;
+}
+
+section#homepage > h1{
+    color: white;
+    font-size:2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    max-width: 8em;
+    margin:auto;
+    margin-left:1.5em;
+    position: relative;
+    top: 60%;
+    transform: translateY(-20%);
+
+}
+
+
+
+
+/*============================================
+
+DETAILS filteren
+
+============================================*/
 
 details{
     background-color:#fafafa;
-    display:block;
-    margin-inline-start: 0.125em;
-    margin-inline-end: 0.125em;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
+    min-width: 23em;
 }
 
 summary{
@@ -115,157 +161,6 @@ summary{
     font-size: 1em;
     border-top:1px solid #99258D;
     text-transform:uppercase;
-
-}
-
-select{
-    color:#2b4040;
-    background-color: white;
-    font-size:0.875em;
-    position:relative;
-    height:0.875em;
-    width:100%;
-    border: 1px solid rgba(234, 234, 234, 1);
-    border-radius:0.125em;
-    display:flex;
-    padding-left:0.625em;
-    margin-top:0.7em;
-}
-
-
-label{
-    font-size:0.875em;
-    font-weight: 700;
-    color: #666;
-    text-transform: uppercase;
-
-}
-
-input[type=radio]{
-    visibility: hidden;
-    color: black;
-    background-color: white;
-    font-size: 1em
-    border: 1px solid (234, 234, 234, 1);
-    width: 5.5em;
-    text-align: center;
-    padding: 0.625em 0em;
-
-
-}
-
-input[type=submit]{
-    float: right;
-    padding: 0.5em 0.625em 0.5em 0.94em;
-    background-color: gray;
-    color: white;
-    font-size: 1em;
-    font-weight: 700;
-    border: 1px solid gray;
-    border-radius: 0.125em;
-    margin-top:1em;
-}
-
-#populaireverhalen article{
-    border:1px solid #a6c4c4;
-    margin-bottom: 2.5em;
-    min-width: 20em;
-}
-
-article header a {
-    width: 8em;
-    border-radius: 3px;
-    color:#fff;
-    font-size: 1em;
-    font-weight:700;
-    background-color:#99258d;
-    border: 1px solid #99258d;
-    text-transform: uppercase;
-    padding 0 1em;
-    right: 1.25em;
-    height: 2.5em;
-    position:absolute;
-    margin-top:-4em;
-    text-decoration: none;
-    text-align: center;
-}
-
-section article footer ul li {
-    list-style:none;
-    width: 100%;
-    height: 5em;
-    border:0;
-    padding:0;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    display:flex;
-    position:absolute;
-
-}
-
-section article footer button {
-
-
-}
-
-#Lengteverhaal article   {
-    margin-bottom: 1.875em;
-    min-width: 10em;
-    margin-right:auto;
-    margin-left:auto;
-    padding: 1.875em 0.625em;
-    padding-left: 0.125em;
-    padding-right: 0.125em;
-    background-color:#99258D;
-    text-align:center;
-    width:100%
-    height:100;
-}
-
-#Lengteverhaal article a  {
-    color:white;
-    font-size: 1.7em;
-    font-weight: 100;
-}
-
-
-
-a article {
-    border: border: 1px solid black;
-    background-color: #FFDF5D;
-    position: relative;
-    display:block;
-    width:100%;
-    height:100%;
-    min-height: 9.625em;
-    overflow:hidden;
-    padding-left: 0.125em;
-    padding-right: 0.125em;
-    margin-bottom: 0.313em;
-    flex:1 0 50%;
-}
-
-article footer ul li {
-    list-style:none;
-    margin-top:-6.25em;
-    margin-left:-1.875em;
-    width:20%;
-    float: left;
-}
-
-section a article img{
-    width: 100%;
-    height: 10em;
-    object-position:center center;
-    border:0;
-}
-
-img{
-    width: 100%;
-    position: relative;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 details > button{
@@ -274,9 +169,10 @@ details > button{
     text-transform: uppercase;
     color:rgba(153, 37, 141, 1);
     margin-right:0.625em;
+    margin-left: 1.5em;
     margin-top:1em;
     padding: 0.375em 0.625em;
-    border-radius: 10px;
+    border-radius: 0.625em;
     border:white;
 
 }
@@ -294,41 +190,786 @@ details > button:focus {
     background-color: #efc030;
 }
 
-#meer {
-    background-color: #99258D;
+details p{
+    margin-left:2em;
+    margin-right:2em;
 }
 
-#stijl article {
-    margin-bottom: 1.875em;
-    min-width: 10em;
-    margin-right:auto;
-    margin-left:auto;
-    padding-top: 0.938em;
-    padding-left:0.125em;
-    padding-right:0.125em;
+select{
+    color:#2b4040;
+    background-color: white;
+    font-size:0.875em;
+    position:relative;
+    height:2.5em;
+    width:95%;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius:0.125em;
+    margin-left:1em;
+    margin-top:0.7em;
+}
+
+fieldset{
+     border: none;
+}
+
+legend{
+    font-size: 0.65em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 2em;
+    padding-left:0.625em;
+    margin-bottom: 0.312em;
+
+}
+
+
+div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+label{
+    color: black;
+    background-color: white;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    width: 5em;
+    text-align: center;
+    padding: 0.5em 0.5em;
+    margin:0;
+    margin-left:-1em;
+}
+
+
+input:checked + label {
+    background-color: #9C2788;
+    color: white;
+}
+
+
+
+input[type=radio]{
+    visibility: hidden;
+}
+
+input[type=submit]{
+    padding: 0.5em 0.625em 0.5em 0.94em;
+    background-color: gray;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid gray;
+    border-radius: 0.125em;
+    margin-top:1em;
+    margin-left: 16.2em;
+    margin-bottom: 1em;
+}
+
+details a{
+    background-image: url(../images/pijlrechts.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 0.5em;
+
+
+    width: 8em;
+    border-radius: 3px;
+    color:#fff;
+    font-size: 1em;
+    font-weight:700;
+    background-color:#99258d;
+    border: 1px solid #99258d;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em 0.5em 1em;
+    line-height: 2.5em;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 13.4em;
+}
+
+
+
+/*============================================
+
+POPULAIRE VERHALEN
+
+============================================*/
+
+section#populaireverhalen article{
+    border:1px solid #a6c4c4;
+    margin-bottom: 2.5em;
+}
+
+section#populaireverhalen article header img{
+    width:100%;
+    height:13em;
+}
+
+article header{
+    display: block;
+
+}
+
+article header a {
+    width: 8em;
+    border-radius: 3px;
+    color:#fff;
+    font-size: 1em;
+    font-weight:700;
+    background-color:#99258d;
+    border: 1px solid #99258d;
+    text-transform: uppercase;
+    padding: 0 1em;
+    height: 2.5em;
+    line-height: 2.5em;
+    display: block;
+    position:relative;
+    margin-top: -4em;
+    text-decoration: none;
+    text-align: center;
+    margin-left:11em;
+
+}
+
+section#populaireverhalen article p{
+    font-size: 1.69em;
+    color: #99258d;
+    font-weight: 300;
+    border-bottom: 0.3em solid #FFDF5D;
+    padding-bottom:0.7em;
+    display:flex;
+    position:relative;
+    justify-content: flex-end;
+    margin-right: 4em;
+    margin-left: 10.5em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+}
+
+/*Sterren rating*/
+
+section footer ul{
+    display:flex;
+}
+
+section footer ul li {
+    list-style:none;
+     justify-content: space-between;
+     width:40%;
+     height:1.5em;
+     position:relative;
+     margin-left: -1.5em;
+     margin-top:-5em;
+
+}
+
+section footer{
+    display:flex;
+    flex-direction: row;
+}
+
+ /*Favoriet en download button*/
+
+button.like {
+    background-image: url(../images/leeghartje.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 0;
+    width: 100%;
+    height: 5em;
+    cursor: pointer;
+    text-indent: -200em;
+    margin-left: 5em;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+button.liked {
+    background-image: url(../images/volhartje.svg);
+}
+
+.download{
+    background-image: url(../images/download.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 0;
+    width: 100%;
+    height: 5em;
+    cursor: pointer;
+    text-indent: -200em;
+    margin-right: auto;
+}
+
+.downloaded {
+    background-image:url(../images/vinkje.svg);
+}
+
+.popup {
+    background-color: #FFDF5D;;
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1em;
+    border:1px solid #a6c4c4;
+    transition: opacity .2s ease-out, .5s ease-out;
+    opacity: 0;
+    width: 21em;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.popup-clicked {
+    opacity: 1;
+    max-height: 8em;
+}
+
+.popup p {
+    font-size: 0.9em;
+    font-weight: 500;
+    color:#99258D;
+    cursor: pointer;
+}
+
+article button:hover {
+   transform:scale(1.1);
+}
+
+
+
+
+/*============================================
+
+ONDERWERPEN
+
+============================================*/
+
+a article {
+    background-color: #FFDF5D;
+    position: relative;
+    display:block;
+    width:100%;
+    height:100%;
+    min-height: 9.625em;
+    overflow:hidden;
+    padding-left: 0.125em;
+    padding-right: 0.125em;
+
+}
+
+section a article img{
+    width: 100%;
+    height: 10em;
+    object-position:center center;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-bottom: 4px solid #99258d;
+}
+
+section a h3{
+    text-align:center;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+section a article p {
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 0;
+    color:#88afaf;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* laatste blokje van "onderwerpen" */
+article#meer {
+    background-color: #99258D;
+    margin-bottom:2em;
+}
+
+article#meer h3{
+    color: #FFDF5D;
+    font-size:1.25em;
+    font-weight: 400;
+    margin-top: 2em;
+
+
+}
+
+
+/*
+============================================
+
+LEESDUUR
+
+============================================*/
+
+section#leesduur article, #stijl article  {
+    padding: 1.875em 0.625em;
+    padding-left: 0.125em;
+    padding-right: 0.125em;
     background-color:#99258D;
     text-align:center;
     width:100%;
-    height: 10.625em;
 }
 
-#stijl a{
-background-image: url("images/druk.svg");
+section#leesduur article a {
+    color:white;
+    font-size: 1.7em;
+    font-weight: 100;
+    text-decoration: none;
 }
+
+
+/*
+============================================
+
+STIJL
+
+============================================*/
+
+section#stijl article a{
+    color:white;
+    font-size: 1.7em;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+
+.minimaal{
+    background-image: url(../images/minimale.png);
+}
+
+.normaal{
+    background-image: url(../images/normaal.png);
+}
+
+.druk{
+    background-image: url(../images/druk.png);
+}
+
+
+/*
+============================================
+
+FOOTER
+
+============================================*/
 
 body > footer{
     background-color:#f4eee8;
-    margin-top: 3em;
+    margin-top: 2em;
     text-align:center;
-    padding: 1em 2em 8em 2em;
+    width:100%;
 }
 
-body > footer > ul > li > a > img {
+footer img{
+    width: 100%;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2em;
+    margin-bottom: 1em;
+}
+
+footer section ul {
     list-style:none;
+    padding: 0;
+    margin-bottom:0.7em;
+    display:flex;
+    justify-content: center;
+
 
 }
 
-li a {
-    margin: 0.625em 0em;
+footer p{
+    font-size: 0.878em;
+    text-align: center;
+    font-weight: 300;
+    color:#2b4040;
+    border-top: 1px solid #d0c9c2;
+    padding: 1em 2em 3em 2em;
+
 }
+
+footer > section > ul > li > a > img{
+    width: 3em;
+    height:3em;
+    margin-top:-1em;
+}
+
+/* Download-empty */
+
+main > h1{
+
+    font-size: 2em;
+    color: black;
+    font-weight: 500;
+    text-transform: none;
+    justify-content: flex-start;
+    transform: translateY(100%);
+    margin-top: 2em;
+    margin-left:0.5em;
+
+}
+
+main > img{
+    margin-top: 1.5em;
+}
+
+main > p{
+    font-size: 1em;
+    font-weight: 200;
+    margin-top:-2em;
+    margin-left:1em;
+    margin-right:1em;
+    text-align: center;
+}
+
+main > a {
+    color: #99258D;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-weight:500;
+    font-size:1.5em;
+}
+
+/* Verhaal */
+
+.stories > img{
+    margin-top:5em;
+}
+
+.comment{
+    background-image: url(../images/comment.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 5em;
+    border: 0;
+}
+
+
+/* Account aanmaken & Inloggen */
+
+/*fieldset{
+    min-width: 0;
+    border:0;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset a{
+    margin-top: 1em;
+}
+
+legend{
+    font-size:34px;
+    margin-top:22px;
+    margin-bottom:11px;
+    font-weight: 500;
+} */
+
+input[type=text], [type=email], [type=password] {
+    color:#2b4040;
+    background-color: white;
+    font-size:0.875em;
+    position:relative;
+    height:2.5em;
+    width:100%;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius:0.125em;
+    display:flex;
+    margin-bottom:1em;
+    padding-left:1em;
+    transition:all 2s;
+}
+
+input[type=email], [type=password]:focus {
+    box-shadow: rgba(0,0,0,0.075);
+}
+
+
+input[type=text], [type=email], [type=password] :valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color:red;
+}
+
+fieldset iput[type=submit]: invalid{
+    background-color:gray;
+}
+
+fieldset iput[type=submit]: valid{
+    background-color:#99258d;
+}
+
+
+/* mobile first */
+   .stories > img:nth-of-type(1) {
+        display: block;
+    }
+
+    .stories > img:nth-of-type(2) {
+        display: none;
+    }
+
+    .stories > img:nth-of-type(3) {
+        display: none;
+    }
+
+    .stories > footer > .like{
+    margin-left: -1em;
+}
+
+
+    section#populaireverhalen, section#onderwerpen, section#leesduur, section#stijl {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0em;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+
+    section#populaireverhalen h2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    h2{
+        margin-bottom: -0.75em;
+    }
+
+    section#populaireverhalen > article:nth-last-of-type(1){
+        display: none;
+    }
+
+    section#leesduur > article:nth-last-of-type(2){
+        display: none;
+    }
+
+
+/*
+============================================
+
+MEDIA QUERY : algemeen
+
+============================================*/
+
+/* tablet/ Ipad */
+@media only screen and (min-width:38em){
+
+
+    section#populaireverhalen {
+/*        display: grid;*/
+        grid-template-columns: 50% 50%;
+        margin: 2em;
+        grid-column-gap: 3em;
+
+/*        justify-content: center;*/
+    }
+    section#populaireverhalen h2, section#onderwerpen h2, section#leesduur h2, section#stijl h2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+     section#onderwerpen {
+        grid-template-columns: 50% 50%;
+        margin: 2em;
+        grid-column-gap: 3em;
+        grid-row-gap: 1em;
+    }
+
+    section#leesduur, section#stijl {
+        grid-template-columns: 50% 50%;
+        margin: 2em;
+        grid-column-gap: 3em;
+    }
+
+    label{
+        padding: 1em 4.5em;
+    }
+
+    input[type=submit]{
+        margin-left: 40.2em;
+    }
+
+    details a{
+        margin-left: 37.2em;
+    }
+
+    h5{
+        margin-right:3em;
+    }
+
+    section#populaireverhalen article p{
+        margin-left: 10em;
+    }
+
+    section footer ul li {
+     margin-top:-5em;
+
+    }
+
+    button.like{
+        margin-left:2em;
+    }
+
+    section#stijl > article:nth-last-of-type(2){
+        display: none;
+    }
+
+
+}
+
+
+/* desktop*/
+@media only screen and (min-width:50em){
+
+    section#populaireverhalen {
+
+/*        display: grid;*/
+        grid-template-columns: 33% 33% 33%;
+/*        margin: 2em;*/
+        grid-column-gap: 2em;
+        grid-row-gap: 1em;
+/*        justify-content: center;*/
+    }
+
+    section#populaireverhalen h2, section#onderwerpen h2, section#leesduur h2, section#stijl h2 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    section#populaireverhalen > article:nth-last-of-type(1){
+        display: block;
+    }
+
+    article header a {
+        margin-left:16em;
+    }
+
+
+    section#onderwerpen, section#leesduur, section#stijl {
+        grid-template-columns: 33% 33% 33%;
+        margin: 2em;
+        grid-column-gap: 2em;
+        grid-row-gap: 0.5em;
+    }
+
+
+     section#leesduur > article:nth-last-of-type(2), section#stijl > article:nth-last-of-type(2) {
+        display: block;
+    }
+
+
+    .stories > img:nth-of-type(1) {
+        display: none;
+    }
+
+    .stories > img:nth-of-type(2) {
+        display: none;
+    }
+
+    .stories > img:nth-of-type(3) {
+        display: block;
+        min-height: 30em;
+    }
+
+    .stories > footer > .like{
+        margin-left:-20em;
+        border: 0;
+        width: 100%;
+        height: 5em;
+        margin-right: auto;
+    }
+
+    .stories > footer > .like, .comment, .download{
+        width: 100%;
+        height: 10em;
+    }
+
+
+
+    h1{
+        display: none;
+    }
+
+    section#homepage {
+        background-color: white;
+        background: url(../images/mop.png) no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20em;
+        width:50%;
+        margin-top: 1.5em;
+        min-width: 23em;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    details{
+        display: flex;
+    }
+
+    summary{
+        font-size:1.5em;
+    }
+
+
+    h2{
+        font-size:2em;
+    }
+
+    button.like{
+        margin-top:2.5em;
+    }
+    footer a{
+        display: block;
+    }
+
+    h5{
+        margin-right: 5.5em;
+    }
+
+    section footer ul li {
+        margin-left: -1.5em;
+        margin-top:-5.5em;
+    }
+
+    /*download-empty*/
+    main > p{
+        font-size: 1.5em;
+    }
+
+
+
+}
+
+
+/*
+============================================
+
+MEDIA QUERY : inlogpagina
+
+============================================*/
+
+
+
 
