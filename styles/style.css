@@ -5,7 +5,7 @@ body {
 }
 
 h2{
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-weight:700;
     color: #2b4040;
     text-align:left;
@@ -299,7 +299,6 @@ POPULAIRE VERHALEN
 
 section#populaireverhalen article{
     border:1px solid #a6c4c4;
-    margin-bottom: 2.5em;
 }
 
 section#populaireverhalen article header img{
@@ -494,7 +493,6 @@ section a article p {
 /* laatste blokje van "onderwerpen" */
 article#meer {
     background-color: #99258D;
-    margin-bottom:2em;
 }
 
 article#meer h3{
@@ -568,7 +566,7 @@ FOOTER
 
 body > footer{
     background-color:#f4eee8;
-    margin-top: 2em;
+    margin-top: 4em;
     text-align:center;
     width:100%;
 }
@@ -581,6 +579,10 @@ footer img{
     margin-top:2em;
     margin-bottom: 1em;
 }
+
+footer > a{
+        display: block;
+    }
 
 footer section ul {
     list-style:none;
@@ -802,17 +804,45 @@ MEDIA QUERY : algemeen
         grid-column-gap: 3em;
     }
 
+    summary{
+        font-size:1.75em;
+    }
+
+
+    details > button{
+        padding: 1em 1.em;
+        font-size: 1em;
+    }
+
+    select{
+        margin-left:1.50em;
+        margin-top:1em;
+    }
+
+    legend{
+        font-size:1em;
+    }
+
     label{
         padding: 1em 4.5em;
     }
 
-    input[type=submit]{
+     input[type=submit]{
         margin-left: 40.2em;
     }
 
-    details a{
+    details > p{
+        font-size:1.5em;
+    }
+
+     details a{
         margin-left: 37.2em;
     }
+
+    h2{
+        font-size: 2em;
+    }
+
 
     h5{
         margin-right:3em;
@@ -834,6 +864,26 @@ MEDIA QUERY : algemeen
     section#stijl > article:nth-last-of-type(2){
         display: none;
     }
+
+    body > footer > img{
+        width: 80%;
+    }
+
+    body > footer > a{
+        font-size: 1.5em;
+    }
+
+    body > footer > p {
+        font-size: 1.5em;
+    }
+
+    body > footer > section > ul > li > a > img{
+    width: 4em;
+    height:4em;
+    margin-top:-2.5em;
+
+}
+
 
 
 }
@@ -913,19 +963,20 @@ MEDIA QUERY : algemeen
 
     section#homepage {
         background-color: white;
-        background: url(../images/mop.png) no-repeat;
+        background: url(../images/mop.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         height: 20em;
-        width:50%;
         margin-top: 1.5em;
-        min-width: 23em;
-        display: flex;
-        justify-content: flex-end;
+        z-index:-1;
+        margin-top:6em;
+
     }
 
     details{
-        display: flex;
+        display: none;
+
     }
 
     summary{
@@ -956,6 +1007,11 @@ MEDIA QUERY : algemeen
     /*download-empty*/
     main > p{
         font-size: 1.5em;
+    }
+
+
+    body > footer > img{
+        width: 50%;
     }
 
 

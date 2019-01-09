@@ -41,3 +41,9 @@ function removePopup() {
     popUp.classList.remove('popup-clicked');
 }
 popUp.addEventListener('click', removePopup);
+
+
+
+//loading state
+
+
