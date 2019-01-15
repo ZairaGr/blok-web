@@ -75,72 +75,16 @@
     </header>
 
     <section id="homepage">
-        <h1>99 Schilderijen voor op reis</h1>
+       <heading>
+        <h1>Wow verhalen</h1>
+        <p>Leuke verhalen samenstellen en downloaden voor op reis</p>
+       </heading>
+
+       <footer>
+           <button>Ontdek verhalen</button>
+       </footer>
+
     </section>
-
-
-    <details>
-        <summary>SCHILDERIJEN</summary>
-
-        <button>FILTER</button>
-        <button>ALLE</button>
-
-
-
-        <select>
-           <option selected disabled>Kies een onderwerp</option>
-            <option value="aparte verhalen">Aparte verhalen</option>
-            <option value="beperkingen">Beperkingen</option>
-            <option value="gevoel">Gevoel</option>
-            <option value="Momentopname">Momentopname</option>
-            <option value="personen">Personen</option>
-            <option value="schrijfstijl">Schrijfstijl</option>
-            <option value="sport">Sport</option>
-            <option value="voor kinderen">Voor kinderen</option>
-        </select>
-
-        <form action="wow_verhaal.html">
-            <fieldset>
-                <legend>Stijl</legend>
-                <div>
-                    <input type="radio" name="stijl" value="minimaal" id="minimaal">
-                    <label for="minimaal">Minimaal</label>
-
-                    <input type="radio" name="stijl" value="normaal" id="normaal" checked>
-                    <label for="normaal">Normaal</label>
-
-                    <input type="radio" name="stijl" value="druk" id="druk">
-                    <label for="druk">Druk</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Aantal woorden</legend>
-                <div>
-                    <input type="radio" name="aantalwoorden" value="0-100" id="0-100">
-                    <label for="0-100">0-100</label>
-
-                    <input type="radio" name="aantalwoorden" value="100-500" id="100-500" checked>
-                    <label for="100-500">100-500</label>
-
-                    <input type="radio" name="aantalwoorden" value="500+" id="500+">
-                    <label for="500+">500+</label>
-                </div>
-            </fieldset>
-
-            <input type="submit" name="zoeken" value="ZOEKEN" />
-        </form>
-
-
-    </details>
-
-    <details>
-        <summary>VERRASSINGEN</summary>
-        <p>Nog steeds aan het zoeken? Wij helpen jou graag! Druk op de <strong>"VERRAS ME"</strong> knop en laat je door ons verrassen.</p>
-
-        <a href="korte%20verhalen.html"> Verras me</a>
-
-    </details>
 
 
     <section id="populaireverhalen">
@@ -255,53 +199,120 @@
         </article>
     </section>
 
+    <section id="filter">
+        <h2>Wat zoek je?</h2>
+
+    <details open>
+        <summary>SCHILDERIJEN</summary>
+
+        <button>FILTER</button>
+        <button>ALLE</button>
+
+
+
+        <select>
+           <option selected disabled>Kies een onderwerp</option>
+            <option value="aparte verhalen">Aparte verhalen</option>
+            <option value="beperkingen">Beperkingen</option>
+            <option value="gevoel">Gevoel</option>
+            <option value="Momentopname">Momentopname</option>
+            <option value="personen">Personen</option>
+            <option value="schrijfstijl">Schrijfstijl</option>
+            <option value="sport">Sport</option>
+            <option value="voor kinderen">Voor kinderen</option>
+        </select>
+
+        <form action="wow_verhaal.html">
+            <fieldset>
+                <legend>Stijl</legend>
+                <div>
+                    <input type="radio" name="stijl" value="minimaal" id="minimaal">
+                    <label for="minimaal">Minimaal</label>
+
+                    <input type="radio" name="stijl" value="normaal" id="normaal" checked>
+                    <label for="normaal">Normaal</label>
+
+                    <input type="radio" name="stijl" value="druk" id="druk">
+                    <label for="druk">Druk</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aantal woorden</legend>
+                <div>
+                    <input type="radio" name="aantalwoorden" value="0-100" id="0-100">
+                    <label for="0-100">0-100</label>
+
+                    <input type="radio" name="aantalwoorden" value="100-500" id="100-500" checked>
+                    <label for="100-500">100-500</label>
+
+                    <input type="radio" name="aantalwoorden" value="500+" id="500+">
+                    <label for="500+">500+</label>
+                </div>
+            </fieldset>
+
+            <input type="submit" name="zoeken" value="ZOEKEN" />
+        </form>
+
+
+    </details>
+
+    <details>
+        <summary>VERRASSINGEN</summary>
+        <p>Nog steeds aan het zoeken? Wij helpen jou graag! Druk op de <strong>"VERRAS ME"</strong> knop en laat je door ons verrassen.</p>
+
+        <a href="korte-verhalen.html"> Verras me</a>
+
+    </details>
+
+    </section>
 
     <section id="onderwerpen">
         <h2>Onderwerpen</h2>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/bijzonder.svg" alt="afbeelding aparte verhalen">
                 <h3>Aparte verhalen</h3>
             </article>
         </a>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/beperking.svg" alt="afbeelding beperkingen">
                 <h3>Beperkingen</h3>
             </article>
         </a>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/emoties.svg" alt="afbeelding gevoel">
                 <h3>Gevoel</h3>
             </article>
         </a>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/momentopname.svg" alt="afbeelding moment opname">
                 <h3>Momentopname</h3>
             </article>
         </a>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/personen.svg" alt="afbeelding personen">
                 <h3>Personen</h3>
             </article>
         </a>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/schrijfstijl.svg" alt="afbeelding schrijfstijl">
                 <h3>Schrijfstijl</h3>
             </article>
         </a>
 
-        <a href="">
+        <a href="korte-verhalen.html">
             <article>
                 <img src="images/voor%20kinderen.svg" alt="afbeelding kinderen">
                 <h3>Voor kinderen</h3>

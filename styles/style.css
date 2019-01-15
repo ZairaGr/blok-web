@@ -165,7 +165,7 @@ section#homepage p{
     margin-left:2.5em;
     margin-right: 1.5em;
     position: absolute;
-    top: 28%;
+    top: 29%;
 }
 
 section#homepage > footer > button{
@@ -773,6 +773,15 @@ main section#accountaanmaken fieldset input[type='email']:focus ~ img.loading {
 fieldset > input[type=submit]{
     background-color: #99258D;
     border:#99258D;
+    border-radius: 3px;
+    color:#fff;
+    font-size: 1em;
+    font-weight:700;
+    background-color:#99258d;
+    border: 1px solid #99258d;
+    text-transform: uppercase;
+    line-height: 2.5em;
+    text-decoration: none;
 }
 
 main section ul li a{
@@ -987,12 +996,16 @@ MEDIA QUERY : algemeen
         padding: 1em 4.5em;
     }
 
+    form > input[type=submit]{
+    margin-left:38.5em;
+    }
+
     details > p{
         font-size:1.5em;
     }
 
      details a{
-        margin-left: 35em;
+        margin-left: 36em;
 
     }
 
@@ -1198,6 +1211,11 @@ MEDIA QUERY : algemeen
     label{
         padding: 1em 3.5em;
     }
+
+    form > input[type=submit]{
+    margin-left:33.75em;
+    }
+
 
     details a{
         margin-left: 25em;
