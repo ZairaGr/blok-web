@@ -38,7 +38,7 @@ h5{
     color:#020303;
     font-weight: 300;
     margin-top: -6.5em;
-    margin-right: 4.5em;
+    margin-right: 2.75em;
 }
 
 
@@ -80,6 +80,27 @@ header a:nth-of-type(1) img {
     margin-left: -2em;
 }
 
+
+header nav ul li:nth-of-type(2) a p{
+    position: absolute;
+    background-color: #FFDF5D;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    top: -.5em;
+    margin-top: 0;
+    left: 5.5em;
+    text-align: center;
+    padding: .3em;
+    color: #2b4040;
+    font-weight: 700;
+}
+
+
+nav > ul > li:nth-of-type(2){
+    position: relative;
+}
+
 nav > ul > li:nth-of-type(2) > a > svg {
     width: 10em;
     margin-top: -1.75em;
@@ -115,27 +136,55 @@ a:active svg .st1{
 }
 
 section#homepage {
-    background-color: white;
     background: url(../images/wow-air.jpg) no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 18em;
     width:100%;
-    min-width: 23em;
+    display: flex;
 }
 
-section#homepage > h1{
-    color: white;
+section#homepage h1{
+    color: #ffdf5d;
     font-size:2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 3px 3px rgba(0,0,0,0.75);
+    margin-right: 3em;
+    margin-left:1em;
+    position: absolute;
+    top: 11%;
+}
+
+section#homepage p{
+    color: #991782;
+    font-size:1em;
     font-weight: 500;
     text-transform: uppercase;
-    max-width: 8em;
     margin:auto;
-    margin-left:1.5em;
-    position: relative;
-    top: 60%;
-    transform: translateY(-20%);
+    margin-left:2.5em;
+    margin-right: 1.5em;
+    position: absolute;
+    top: 28%;
+}
+
+section#homepage > footer > button{
+    border-radius: 3px;
+    color:#fff;
+    font-size: 0.7em;
+    font-weight:700;
+    text-transform: uppercase;
+    background-color:#99258d;
+    border: 1px solid #99258d;
+    padding:4 2em 4em;
+    line-height: 2.5em;
+    position:absolute;
+    top:37%;
+    left:59%;
+
+
+
 
 }
 
@@ -150,7 +199,7 @@ DETAILS filteren
 
 details{
     background-color:#fafafa;
-    min-width: 23em;
+    margin-top: 2em;
 }
 
 summary{
@@ -311,7 +360,6 @@ article header{
 }
 
 article header a {
-    width: 8em;
     border-radius: 3px;
     color:#fff;
     font-size: 1em;
@@ -320,14 +368,13 @@ article header a {
     border: 1px solid #99258d;
     text-transform: uppercase;
     padding: 0 1em;
-    height: 2.5em;
     line-height: 2.5em;
     display: block;
-    position:relative;
+    position:absolute;
     margin-top: -4em;
     text-decoration: none;
     text-align: center;
-    margin-left:11em;
+    margin-left:14em;
 
 }
 
@@ -667,6 +714,10 @@ main > a {
 
 /* Account aanmaken & Inloggen */
 
+::placeholder{
+    padding:0.5em;
+}
+
 main section fieldset legend{
     font-size: 2em;
     font-weight: 500;
@@ -695,6 +746,34 @@ main section#accountaanmaken ul{
     display:flex;
 }
 
+main section#accountaanmaken fieldset > img{
+    height:2em;
+    position: absolute;
+    margin-left: 19em;
+    margin-top:-3.50em;
+    display:none;
+}
+
+main section#accountaanmaken fieldset input[type='text']:focus ~ img.correct {
+    display: block;
+}
+
+main section#accountaanmaken fieldset input[type='email']:focus ~ img.loading {
+    display: block;
+    animation: fade-out 0.4s forwards;
+    animation-delay: 1s; /* 1sec wachten voordat die fade-out*/
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 main section ul li a{
     width:100%;
     margin-top:-4.5em;
@@ -711,26 +790,38 @@ main section h2{
 main section ul li{
     width:2em;
     height: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section:last-of-type ul li{
+    width:100%;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin-top:0.75em;
 }
 
 main section#voordelen ul li img{
     margin-left:-3em;
     width:2em;
     height:2em;
-    margin-top:
-
+    margin-top:0.5em;
 }
 
-main section ul li h3 {
-    font-size: 1em;
+main section ul li p {
+    width:100%;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+
 }
 
 section#voordelen{
-        border: 2px solid #99258D;
-        margin-left: 25em;
-        margin-top:-25.5em;
-        padding:1em;
-        margin-right:1em;
+    border: 2px solid #99258D;
+    margin-left: 25em;
+    margin-top:-28.3em;
+    padding:1em 3em 2em 1em;
+    margin-right:1em;
 }
 
 input[type=text], [type=email], [type=password] {
@@ -745,6 +836,7 @@ input[type=text], [type=email], [type=password] {
     padding-left:1em;
     transition:all 2s;
     margin-top: 0.25em;
+    padding: 0.50em;
 }
 
 
@@ -758,21 +850,27 @@ input:invalid {
 
 
 /* mobile first */
-   .stories > img:nth-of-type(1) {
+
+   section.stories > img:nth-of-type(1) {
         display: block;
+       margin-top:3em;
     }
 
-    .stories > img:nth-of-type(2) {
+    section.stories > img:nth-of-type(2) {
         display: none;
     }
 
-    .stories > img:nth-of-type(3) {
+    section.stories > img:nth-of-type(3) {
         display: none;
     }
 
-    .stories > footer > .like{
+    section.stories > footer > .like{
     margin-left: -1em;
-}
+    }
+
+    section.stories > footer >.download{
+    margin-left:15em;
+    }
 
 
     section#populaireverhalen, section#onderwerpen, section#leesduur, section#stijl {
@@ -818,15 +916,35 @@ MEDIA QUERY : algemeen
 /* tablet/ Ipad */
 @media only screen and (min-width:38em){
 
+    section#homepage h1{
+        top:7.5%;
+        font-size: 2.5em;
+    }
+
+    section#homepage p{
+        top:17%;
+        margin-left:2em;
+        font-size:1.5em;
+        margin-right:4em;
+    }
+
+    section#homepage > footer > button{
+        top:23%;
+        left:78%;
+    }
+
 
     section#populaireverhalen {
 /*        display: grid;*/
         grid-template-columns: 50% 50%;
         margin: 2em;
         grid-column-gap: 2em;
-
-/*        justify-content: center;*/
     }
+
+    details{
+        margin:1em;
+    }
+
     section#populaireverhalen h2, section#onderwerpen h2, section#leesduur h2, section#stijl h2 {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -885,6 +1003,10 @@ MEDIA QUERY : algemeen
         margin-right:3em;
     }
 
+    article header a{
+        margin-left:12.75em;
+    }
+
     section#populaireverhalen article p{
         margin-left: 10em;
     }
@@ -934,39 +1056,54 @@ MEDIA QUERY : algemeen
 
     section#voordelen{
         display:block;
+        padding: 1em 3em 0.5em 1em;
     }
 
-/*
-    section#voordelen ul li img{
-
-
-    }
-*/
     section#accountaanmaken{
         width: 50%;
     }
 
 
-
-
-/*
-    main section input[type=text], [type=email], [type=password] {
-        width:40%;
-        height:3em;
+    /*Verhaal*/
+    section.stories > img:nth-of-type(1) {
+        display: none;
     }
-*/
 
+    section.stories > img:nth-of-type(2) {
+        display: block;
+    }
 
+    section.stories > img:nth-of-type(3) {
+        display: none;
+    }
 
-
-
-
+    section.stories > footer >.download{
+    margin-left:40em;
+    }
 
 }
 
 
 /* desktop*/
 @media only screen and (min-width:50em){
+
+     section#homepage h1{
+        font-size: 2.5em;
+         top:11%;
+
+    }
+
+    section#homepage p{
+        top:23%;
+        margin-left:2em;
+        font-size:1.5em;
+        margin-right:4em;
+    }
+
+    section#homepage > footer > button{
+        top:32%;
+        left:4%;
+    }
 
     section#populaireverhalen {
 
@@ -988,7 +1125,7 @@ MEDIA QUERY : algemeen
     }
 
     article header a {
-        margin-left:16em;
+        margin-left:17em;
     }
 
 
@@ -1005,20 +1142,21 @@ MEDIA QUERY : algemeen
     }
 
 
-    .stories > img:nth-of-type(1) {
+    section.stories > img:nth-of-type(1) {
         display: none;
     }
 
-    .stories > img:nth-of-type(2) {
+    section.stories > img:nth-of-type(2) {
         display: none;
     }
 
-    .stories > img:nth-of-type(3) {
+    section.stories > img:nth-of-type(3) {
         display: block;
-        min-height: 30em;
+        width: 100%;
+
     }
 
-    .stories > footer > .like{
+    section.stories > footer > .like{
         margin-left:-20em;
         border: 0;
         width: 100%;
@@ -1026,28 +1164,17 @@ MEDIA QUERY : algemeen
         margin-right: auto;
     }
 
-    .stories > footer > .like, .comment, .download{
+    section.stories > footer > .like, .comment, .download{
         width: 100%;
         height: 10em;
     }
 
-
-
-    h1{
-        display: none;
+    section.stories > footer >.like{
+    margin-top:-0.25em;
     }
 
-    section#homepage {
-        background-color: white;
-        background: url(../images/mop.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 20em;
-        margin-top: 1.5em;
-        z-index:-1;
-        margin-top:6em;
-
+    section.stories > footer >.download{
+    margin-left: auto;
     }
 
     details{
@@ -1092,8 +1219,25 @@ MEDIA QUERY : algemeen
 
     section#voordelen{
         margin-left: 47em;
+        padding: 1em 3em 0.5em 1em;
     }
 
+    main section#voordelen ul li img{
+    margin-left:-3em;
+    width:2em;
+    height:2em;
+    }
+
+    main section ul li p {
+    font-size: 1.5em;
+    margin-top:-0.01em;
+    }
+
+    main section#accountaanmaken fieldset > img{
+    margin-left:40em;
+
+
+}
 
 }
 
