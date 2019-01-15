@@ -142,7 +142,6 @@ section#homepage {
     background-size: cover;
     height: 18em;
     width:100%;
-    display: flex;
 }
 
 section#homepage h1{
@@ -182,12 +181,7 @@ section#homepage > footer > button{
     position:absolute;
     top:37%;
     left:59%;
-
-
-
-
 }
-
 
 
 
@@ -197,9 +191,13 @@ DETAILS filteren
 
 ============================================*/
 
+section#filter h2{
+    margin-left:0.50em;
+}
+
 details{
     background-color:#fafafa;
-    margin-top: 2em;
+    margin-top: 0.75em;
 }
 
 summary{
@@ -303,7 +301,7 @@ input[type=radio]{
     visibility: hidden;
 }
 
-input[type=submit]{
+form > input[type=submit]{
     padding: 0.5em 0.625em 0.5em 0.94em;
     background-color: gray;
     color: white;
@@ -313,6 +311,7 @@ input[type=submit]{
     border-radius: 0.125em;
     margin-top:1em;
     margin-bottom: 1em;
+    margin-left:15.75em;
 }
 
 details a{
@@ -321,8 +320,6 @@ details a{
     background-repeat: no-repeat;
     background-size: 0.5em;
 
-
-    width: 8em;
     border-radius: 3px;
     color:#fff;
     font-size: 1em;
@@ -336,7 +333,6 @@ details a{
     text-align: center;
     margin-left: 13.4em;
 }
-
 
 
 /*============================================
@@ -774,6 +770,11 @@ main section#accountaanmaken fieldset input[type='email']:focus ~ img.loading {
     }
 }
 
+fieldset > input[type=submit]{
+    background-color: #99258D;
+    border:#99258D;
+}
+
 main section ul li a{
     width:100%;
     margin-top:-4.5em;
@@ -873,7 +874,7 @@ input:invalid {
     }
 
 
-    section#populaireverhalen, section#onderwerpen, section#leesduur, section#stijl {
+    section#populaireverhalen, section#filter, section#onderwerpen, section#leesduur, section#stijl {
         display: grid;
         grid-template-columns: 100%;
         margin: 0em;
@@ -991,7 +992,8 @@ MEDIA QUERY : algemeen
     }
 
      details a{
-        margin-left: 37.2em;
+        margin-left: 35em;
+
     }
 
     h2{
@@ -1170,20 +1172,37 @@ MEDIA QUERY : algemeen
     }
 
     section.stories > footer >.like{
-    margin-top:-0.25em;
+        margin-top:-0.25em;
     }
 
     section.stories > footer >.download{
-    margin-left: auto;
+        margin-left: auto;
     }
 
-    details{
-        display: none;
-
-    }
-
-    summary{
+    summary {
         font-size:1.5em;
+    }
+
+    section#filter h2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    section#filter {
+        grid-template-columns: 50% 50%;
+        margin: 2em;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    label{
+        padding: 1em 3.5em;
+    }
+
+    details a{
+        margin-left: 25em;
+        padding:1em 3em;
+        margin-top:1em;
     }
 
 
@@ -1194,6 +1213,7 @@ MEDIA QUERY : algemeen
     button.like{
         margin-top:2.5em;
     }
+
     footer a{
         display: block;
     }
@@ -1235,9 +1255,7 @@ MEDIA QUERY : algemeen
 
     main section#accountaanmaken fieldset > img{
     margin-left:40em;
-
-
-}
+    }
 
 }
 
