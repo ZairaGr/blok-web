@@ -191,10 +191,6 @@ DETAILS filteren
 
 ============================================*/
 
-section#filter h2{
-    margin-left:0.50em;
-}
-
 details{
     background-color:#fafafa;
     margin-top: 0.75em;
@@ -829,7 +825,7 @@ main section ul li p {
 section#voordelen{
     border: 2px solid #99258D;
     margin-left: 25em;
-    margin-top:-28.3em;
+    margin-top:-27em;
     padding:1em 3em 2em 1em;
     margin-right:1em;
 }
@@ -941,6 +937,11 @@ MEDIA QUERY : algemeen
     section#homepage > footer > button{
         top:23%;
         left:78%;
+    }
+
+      section#filter h2{
+        margin-left:0.75em;
+          margin-bottom: -1.25em;
     }
 
 
@@ -1071,7 +1072,7 @@ MEDIA QUERY : algemeen
 
     section#voordelen{
         display:block;
-        padding: 1em 3em 0.5em 1em;
+        padding: 0.5em 2em 1em 1em;
     }
 
     section#accountaanmaken{
@@ -1102,7 +1103,7 @@ MEDIA QUERY : algemeen
 /* desktop*/
 @media only screen and (min-width:50em){
 
-     section#homepage h1{
+    section#homepage h1{
         font-size: 2.5em;
          top:11%;
 
