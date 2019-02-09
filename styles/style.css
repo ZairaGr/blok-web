@@ -1110,15 +1110,15 @@ MEDIA QUERY : algemeen
     }
 
     section#homepage p{
-        top:23%;
+        top:26%;
         margin-left:2em;
         font-size:1.5em;
         margin-right:4em;
     }
 
     section#homepage > footer > button{
-        top:32%;
-        left:4%;
+        top:35%;
+        left:5%;
     }
 
     section#populaireverhalen {

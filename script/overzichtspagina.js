@@ -27,7 +27,7 @@ var downloadNummer = parseInt(downloadNotieficatie.innerText); //text in de p om
 for (i = 0; i < downloadIcoon.length; i++) {
     downloadIcoon[i].addEventListener("click", function () {
         this.classList.toggle('downloaded'); //button krijgt vinkjke
-        popUp.classList.toggle('popup-clicked'); //even popup tonen na de klik op button
+        popUp.claasList.toggle('popup-clicked'); //even popup tonen na de klik op button
 
         if (this.classList.contains('downloaded')) {
             downloadNummer++; //voeg een nummer toe aan de p
